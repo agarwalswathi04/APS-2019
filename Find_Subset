@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ char data[]={'a','b','c'};
+    int set_size=3,i,j;
+    unsigned int size=pow(2,set_size);
+     printf("%d",set_size);
+    printf("%d",size);
+        for(i=0;i<size;i++)
+    {
+       for(j=0;j<set_size;j++)
+    {
+        if(i&(1<<j))
+            printf("%c",data[j]);
+    }
+           // printf("i is%d",i);
+         printf("%c\n",data[j]);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+/* 
+38
+a
+b
+ab
+c
+ac
+bc
+abc
+*/
